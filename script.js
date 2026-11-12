@@ -44,7 +44,7 @@ if (lead) lead.addEventListener('submit', e => {
 
 // Revelar ao rolar + contadores (conteúdo permanece visível sem JS)
 root.classList.add('js');
-const targets = document.querySelectorAll('.card, .job, .project, .panel, .prose, .duo,.contacts > *, .kpi');
+const targets = document.querySelectorAll('.card, .job, .project, .panel, .prose, .duo, .audience__col, .step, .photo--sm, .contacts > *, .kpi');
 targets.forEach(el => el.classList.add('reveal'));
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => {
